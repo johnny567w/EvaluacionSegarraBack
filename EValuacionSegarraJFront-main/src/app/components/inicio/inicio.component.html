@@ -1,0 +1,13 @@
+<main
+  [ngClass]="{
+    'mt-44 sm:mt-16': showHome || showOnlyHeader
+  }"
+  class="bg-cover bg-no-repeat"
+  style="background-image: url('assets/img/fondoprincipal.png');"
+>
+  <section *ngIf="showHome">
+    <app-main-content></app-main-content>
+    <router-outlet></router-outlet> <!-- Aquí se cargarán los componentes dinámicos -->
+
+  </section>
+</main>

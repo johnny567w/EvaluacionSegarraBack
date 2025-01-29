@@ -1,0 +1,12 @@
+<div class="max-w-xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-10">
+    <h1 class="text-2xl font-bold mb-4 text-center">Ingresar Usuario y Consumo</h1>
+  
+    <h2 class="text-lg font-semibold mb-2">Nuevo Usuario</h2>
+    <input type="text" class="w-full p-2 border rounded mb-2" placeholder="Cédula" [(ngModel)]="usuario.cedula">
+    <input type="text" class="w-full p-2 border rounded mb-2" placeholder="Nombre" [(ngModel)]="usuario.nombre">
+    <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600" (click)="agregarUsuario()">
+      Agregar Usuario
+    </button>
+        <p *ngIf="mensaje" class="text-center mt-4 font-semibold text-green-600">{{ mensaje }}</p>
+  </div>
+  
